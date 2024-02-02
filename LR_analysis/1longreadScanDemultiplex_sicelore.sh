@@ -1,4 +1,8 @@
 #!/bin/bash
+
+##### This script was modified based on sicelore
+##### Please find original code and more information at https://github.com/ucagenomix/sicelore
+
 # need Java.1.8 in JAVA_HOME
 export PATH=./jdk1.8.0_121/bin/:$PATH
 export JAVA_HOME=./jdk1.8.0_121/bin/java
