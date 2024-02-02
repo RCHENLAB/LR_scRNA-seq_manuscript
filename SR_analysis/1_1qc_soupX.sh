@@ -1,7 +1,7 @@
 #!/bin/sh
 
-in_dir=$1
-out_dir=$2
+out_dir=$1
+in_dir=$2
 sample_id=$3
 
 echo "start soupX ${sample_id} in ${in_dir}"
