@@ -1,5 +1,8 @@
 #!/bin/sh
 
+##### This script was modified based on Flair
+##### Please find original code and more information at https://flair.readthedocs.io/en/latest/index.html
+
 mkdir ./Flair
 
 ### Extract SR junctions and filter out junctions with few supporting junction reads [3]
