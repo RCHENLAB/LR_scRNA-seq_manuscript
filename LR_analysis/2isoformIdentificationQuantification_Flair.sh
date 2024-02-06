@@ -23,7 +23,7 @@ flair collapse -q ./Flair/LR_corrected_all_corrected.bed -g ./mm10.fasta -f ./ge
 ### Extract LR read name with cellBC
 less ./sicelore/combined.sam | awk -F '\t' '{ split($0,a,"BC:Z:"); split(a[2],b,"\t"); if($1!~"@") print $1"\t"b[1]}' > ./Flair/LR_ID_BC
 sed -i '1iread_id\tbarcode' ./Flair/LR_ID_BC
-python3 ./barcode.py ./Flair/LR_ID_BC ./SR_barcode_list ./Flair/LR_ID_celltype
+python3 ./barcode.py ./Flair/LR_ID_BC ./SR_barcode_celltype ./Flair/LR_ID_celltype
 
 ### Quantify FLAIR isoform usage across samples using minimap2
 awk '{ if($3=="AC") print $1}' ./Flair/LR_ID_celltype > ./Flair/AC
